@@ -1,7 +1,13 @@
 import React from 'react';
 
-function SideBarFooter() {
-    return <div className="SideBarFooter">SideBarFooter</div>;
+function SideBarFooter({ onClick }) {
+    return (
+        <div className="SideBarFooter">
+            <button className="SideBarFooter__add-button" onClick={onClick}>
+                +
+            </button>
+        </div>
+    );
 }
 
 export default SideBarFooter;
