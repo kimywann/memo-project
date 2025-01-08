@@ -14,8 +14,10 @@ function MemoList({
                     onClickItem={() => {
                         setSelectedMemoIndex(index);
                     }}
-                    onClickdelete={() => {
+                    onClickdelete={(e) => {
                         deleteMemo(index);
+                        e.preventDefault();
+                        e.stopPropagation();
                     }}
                     isSelected={index === selectedMemoIndex}
                 >
