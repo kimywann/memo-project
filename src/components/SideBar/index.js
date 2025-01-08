@@ -1,7 +1,9 @@
+import './index.css';
+
 import React from 'react';
-import MemoList from './MemoList';
-import SideBarHeader from './SideBarHeader';
-import SideBarFooter from './SideBarFooter';
+import MemoList from '../MemoList';
+import SideBarHeader from '../SideBarHeader';
+import SideBarFooter from '../SideBarFooter';
 
 function SideBar({
     memos,

@@ -1,3 +1,4 @@
+import './index.css';
 import React from 'react';
 
 function SideBarFooter({ onClick }) {

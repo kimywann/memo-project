@@ -1,0 +1,31 @@
+.MemoItem {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    position: relative;
+    /* 개행 처리 */
+}
+
+.MemoItem.selected {
+    background-color: rgba(100, 100, 100, 0.3);
+    font-weight: 500;
+}
+
+.MemoItem__delete-button {
+    background: none;
+    color: red;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.8;
+}
+
+.MemoItem:hover .MemoItem__delete-button {
+    display: inline-block;
+}
