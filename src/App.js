@@ -4,6 +4,9 @@ import MemoContainer from './components/MemoContainer';
 import SideBar from './components/SideBar';
 import { setItem, getItem } from './lib/storage';
 import debounce from 'lodash.debounce';
+import { Route, Routes } from 'react-router-dom';
+import Complete from './pages/Complete';
+import MemoPage from './pages/MemoPage';
 
 const debouncedSetItem = debounce(setItem, 5000);
 
@@ -67,6 +70,10 @@ function App() {
                 deleteMemo={deleteMemo}
             />
             <MemoContainer memo={memos[selectedMemoIndex]} setMemo={setMemo} />
+            <Routes>
+                <Route path="" element={<Complete />} />
+                <Route path="/2" element={<MemoPage />} />
+            </Routes>
         </div>
     );
 }
