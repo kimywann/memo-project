@@ -6,7 +6,7 @@ function MemoContainer({ memo, setMemo }) {
         return (
             <div>
                 <h1>메모가 없습니다.</h1>
-                <h2>새로운 메모를 추가해주세요.</h2>
+                <p>새로운 메모를 추가해주세요.</p>
             </div>
         );
     }
