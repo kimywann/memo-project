@@ -71,7 +71,7 @@ function App() {
             />
             <MemoContainer memo={memos[selectedMemoIndex]} setMemo={setMemo} />
             <Routes>
-                <Route path="" element={<Complete />} />
+                <Route path="/1" element={<Complete />} />
                 <Route path="/2" element={<MemoPage />} />
             </Routes>
         </div>
