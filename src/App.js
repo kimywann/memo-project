@@ -70,10 +70,6 @@ function App() {
                 deleteMemo={deleteMemo}
             />
             <MemoContainer memo={memos[selectedMemoIndex]} setMemo={setMemo} />
-            <Routes>
-                <Route path="/1" element={<Complete />} />
-                <Route path="/2" element={<MemoPage />} />
-            </Routes>
         </div>
     );
 }
